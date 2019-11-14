@@ -8,5 +8,5 @@
 |&emsp;|---sort.hex<br>
 |---src<br>
 待办：<br>
-1.ScoreBoard Algorithm
-2.Tomasulo Algorithm
+1.ScoreBoard Algorithm<br>
+2.Tomasulo Algorithm<br>
