@@ -1,10 +1,4 @@
  .text
-#################################################################################
-#本程序实现0x80开始的8个字单元的降序排序,此程序可在mars mips仿真器中运行,字地址0x80
-#运行时请将Mars Setting中的Memory Configuration设置为Compact，data at address 0
-#
-#################################################################################
- .text
 sort_init:
  addi $s0,$0,-1
  addi $s1,$0,0
@@ -32,12 +26,12 @@ sort_init:
  sw $s0,128($s1)
  
  add $s0,$zero,$zero   
- addi $s1,$zero,28   #排序区间
+ addi $s1,$zero,28   
 sort_loop:
  lw $s3,128($s0)     
  lw $s4,128($s1)
  slt $t0,$s3,$s4
- beq $t0,$0,sort_next   #降序排序
+ beq $t0,$0,sort_next  
  sw $s3, 128($s1)
  sw $s4, 128($s0)   
 sort_next:
