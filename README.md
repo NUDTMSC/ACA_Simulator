@@ -8,7 +8,10 @@
 |---tools  
 |&emsp;|---Mars4_5.jar  
 |&emsp;|---MISP_Green_Sheet.pdf  
-|---src   
+|---src  
+|&emsp;|---filetoinsmem.py  
+已完成:  
+1.将排序测试程序包含的mips指令解析到内存  
 待办:  
 1.ScoreBoard Algorithm  
 2.Tomasulo Algorithm  
